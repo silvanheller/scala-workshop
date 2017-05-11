@@ -38,7 +38,7 @@ val baseLibs = Seq(
 //libs
 //Spark is just an example here.
 val coreLibs = Seq(
-  "org.apache.spark" % "spark-core_2.11" % "2.1.0" excludeAll ExclusionRule("org.apache.hadoop"), //make sure that you use the same spark version as in your deployment!
+  "org.apache.spark" % "spark-core_2.11" % "2.1.0" excludeAll ExclusionRule("org.apache.hadoop") //make sure that you use the same spark version as in your deployment!
 ).map(
   _.excludeAll(
     ExclusionRule("org.scala-lang"),
